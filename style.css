@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400&display=swap');
+
+/* ec7026 203a43 medium*/
+/* eb5a1c  0f2027 dark */
+/* fba64a  2c5364 light */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin sans',sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #fba64a, #ec7026, #eb5a1c);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    height: 100vh;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.27);
+    border-radius: 25px;
+    flex-direction: column;
+    color: #fffafa;
+    overflow: hidden;
+    position: relative;
+}
+
+.box img{
+   width: 100px;
+   height: 100px;
+   border-radius: 100px;
+}
+
+.user_name{
+    margin:10px 0px 5px 0px;
+    font-size: 1.6rem;
+}
+
+.skill{
+    color: #fba64a;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.arr_container, .cancel{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #fffafa;
+    bottom: 0;
+    right: 0;
+    border-radius: 25px, 0, 25px, 0;
+    color:#777;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.arr_container i{
+    transform: rotate(45deg);
+}
+
+.active_arr{
+    transform: translate(80%, 80%);
+}
+
+.left_container{
+    position: absolute;
+    background: #eb5a1c;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    padding: 40px 0 0 20px;
+    transition: all .4s;
+}
+
+.left_container p{
+    font-size: 1.5rem;
+}
+
+.off{
+    transform: translate(-80%, -80%) rotate(90deg);
+}
+
+.active{
+    transform: translate(0) rotate(0);
+}
+
+.left_container{
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    padding: 40px;
+}
+
+.skills{
+    margin-top: 8px;
+}
+
+.left_container, .skills div{
+    display: inline-block;
+    color: #fffafa;
+    font-size: .9rem;
+    margin: 4px 4px 4px 0;
+}
+
+.skills div{
+    border: 1px solid white;
+    padding: 10px 10px;
+}
+
+.left_container .icons{
+    font-size: 1.8rem;
+    margin-top: 15px;
+}
+
+.left_container .icons{
+    color: #fba64a;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: all .4s;
+}
+
+.left_container .icons i:hover{
+    color: #fffafa;
+}
